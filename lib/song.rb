@@ -18,8 +18,7 @@ class Song
   
   def self.new_by_filename(filename)
     song = self.new(filename.split(" - ")[1])
-    artist_name = (filename.split(" - ")[0])
-    genre_name = (filename.split)
+    song.artist_name = (filename.split(" - ")[0])
     song
   end
   
